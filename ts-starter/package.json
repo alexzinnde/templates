@@ -1,0 +1,30 @@
+{
+  "name": "change-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "scripts": {
+    "watch": "nodemon --watch './**/*.{ts,graphql}' --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' src/index.ts",
+    "dev": "tsc-watch --onSuccess \"npm run watch\""
+  },
+  "keywords": [],
+  "author": "Alexander Zinn",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/esm": "^1.0.2",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "eslint": "^8.31.0",
+    "eslint-config-standard-with-typescript": "^27.0.1",
+    "eslint-plugin-import": "^2.27.4",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.3",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^4.9.4"
+  }
+}
