@@ -1,4 +1,5 @@
 {
+  "extends": "@tsconfig/esm/tsconfig.json",
   "compilerOptions": {
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
